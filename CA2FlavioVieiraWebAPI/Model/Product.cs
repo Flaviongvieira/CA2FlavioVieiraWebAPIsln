@@ -21,12 +21,12 @@ namespace CA2FlavioVieiraWebAPI.Model
         public int ProductRating { get; set; }
 
         // Product category (Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’)
-        /*[RegularExpression("Football|Hurling|Clothes", ErrorMessage = "Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’")]*/
+        [RegularExpression("Football|Hurling|Clothes", ErrorMessage = "Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’")]
         public string ProductCategory { get; set; } = "";
 
 
         // Product Size (Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’)
-        /*[RegularExpression("XL|L|M|S", ErrorMessage = "Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’")]*/
+        [RegularExpression("XL|L|M|S", ErrorMessage = "Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’")]
         public string ProductSize { get; set; } = "";
 
     }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA2FlavioVieiraWebAPI", "CA2FlavioVieiraWebAPI\CA2FlavioVieiraWebAPI.csproj", "{DB13B31E-76FA-447F-8D40-80C9D3D23987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA2FlavioVieiraWebAPITests", "CA2FlavioVieiraWebAPITests\CA2FlavioVieiraWebAPITests.csproj", "{08E4B657-61AB-4BFA-A41D-F9361F8C8BBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DB13B31E-76FA-447F-8D40-80C9D3D23987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB13B31E-76FA-447F-8D40-80C9D3D23987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB13B31E-76FA-447F-8D40-80C9D3D23987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E4B657-61AB-4BFA-A41D-F9361F8C8BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E4B657-61AB-4BFA-A41D-F9361F8C8BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E4B657-61AB-4BFA-A41D-F9361F8C8BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E4B657-61AB-4BFA-A41D-F9361F8C8BBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -22,7 +22,7 @@ namespace CA2FlavioVieiraWebAPI.Controllers
         }
 
         // GET api/<ProductsController>/5           https://localhost:7001/Products/Products/Hurling/5
-        [HttpGet("Products/{category}/{rating}")] 
+        [HttpGet("{category}/{rating}")] 
         public ActionResult<IEnumerable<Product>> GetAllProductsbyCategoryRating(string category, int rating)
         {
             var found = _repo.GetProductbyCategoryRating(category, rating);
@@ -37,7 +37,7 @@ namespace CA2FlavioVieiraWebAPI.Controllers
         }
 
         // GET api/<ProductsController>/5           https://localhost:7001/Products/Products/39.80/59.90
-        [HttpGet("Products/Price/{min}/{max}")]
+        [HttpGet("Price/{min}/{max}")]
         public ActionResult<IEnumerable<Product>> GetAllProductsbyCPrice(double min, double max)
         {
             var found = _repo.GetProductbyPriceRange(min, max);

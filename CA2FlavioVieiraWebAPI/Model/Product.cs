@@ -4,11 +4,6 @@ namespace CA2FlavioVieiraWebAPI.Model
 {
     public class Product
     {
-        /*public enum category
-        {
-            Football, Hurling, Clothes
-        }*/
-
         // ProductID
         [Key]
         public int ProductID { get; set; }
@@ -23,18 +18,16 @@ namespace CA2FlavioVieiraWebAPI.Model
 
         // Product Rating (an integer value for 1 to 5 representing the customer rating of the product) 
         [Range(1,5)]
-
         public int ProductRating { get; set; }
 
         // Product category (Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’)
-        /*public category ProductCategory { get; set; }*/
-        [RegularExpression("Football|LHurling|Clothes", ErrorMessage = "Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’")]
-        public string ProductCategory { get; set; }
+        /*[RegularExpression("Football|Hurling|Clothes", ErrorMessage = "Allowed values are ‘Football’, ‘Hurling’ and ‘Clothes’")]*/
+        public string ProductCategory { get; set; } = "";
 
 
         // Product Size (Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’)
-        [RegularExpression("XL|L|M|S", ErrorMessage = "Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’")]
-        public string ProductSize { get; set; }
+        /*[RegularExpression("XL|L|M|S", ErrorMessage = "Allowed values are ‘XL, ‘L’ , ‘M’, and ‘S’")]*/
+        public string ProductSize { get; set; } = "";
 
     }
 }
